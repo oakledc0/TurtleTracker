@@ -1,0 +1,4 @@
+#Ignore the Spyder batch file
+saraNoHeader.txt
+#Ignore the Spyder project files
+.spyproject/*
