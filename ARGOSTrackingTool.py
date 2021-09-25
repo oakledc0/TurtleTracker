@@ -43,10 +43,12 @@ for lineString in line_list:
     # Move to the next line
     lineString = file_object.readline()
 
+    #filter obs_lc = 1, 2, or 3
+    if obs_lc in ('1', '2', '3'):
     
-#add items to date_dict & coord_dict dictionaries 
-    date_dict[record_id] = obs_date
-    coord_dict[record_id] = (obs_lat, obs_lon)
+    #add items to date_dict & coord_dict dictionaries 
+        date_dict[record_id] = obs_date
+        coord_dict[record_id] = (obs_lat, obs_lon)
 
 # Close the file
 file_object.close()
